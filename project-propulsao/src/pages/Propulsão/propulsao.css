@@ -1,0 +1,39 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+.video-grid-large{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.video-enrtevista{
+    display: grid;
+    justify-items: center;
+}
+  
+  video {
+    width: 100%; /* Faz com que o vídeo ocupe 100% do seu contêiner */
+    max-width: 800px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção do vídeo */
+  }
+
+  figcaption{
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  figcaption h5{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  figcaption p{
+    font-size: 18px;
+    color: #1d1d1d;
+    font-style: italic;
+  }

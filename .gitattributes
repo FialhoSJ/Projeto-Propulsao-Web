@@ -1,0 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+src/Assets/videos/video_entrevista1.mp4 filter=lfs diff=lfs merge=lfs -text
+src/Assets/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text

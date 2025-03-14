@@ -1,0 +1,11 @@
+.carousel-inner img {
+    max-width: 90%; /* Reduzindo a largura da imagem sem cortá-la */
+    height: 490px; /* Mantém a proporção original da imagem */
+    margin: auto; /* Centraliza a imagem dentro do carrossel */
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Muda a cor das setas para preto */
+}
