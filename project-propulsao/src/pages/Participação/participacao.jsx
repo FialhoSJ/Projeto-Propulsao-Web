@@ -7,6 +7,7 @@ import imagem_5 from "../../Assets/imagem_5.jpg";
 import imagem_6 from "../../Assets/imagem_6.jpg";
 import imagem_7 from "../../Assets/imagem_7.jpg";
 import imagem_8 from "../../Assets/imagem_8.jpg";
+import imagem_12 from "../../Assets/imagem_12.jpg";
 import "./participacao.css"; // Caso queira adicionar estilos personalizados
 
 function Participacao() {
@@ -82,6 +83,9 @@ function Participacao() {
                         </div>
                         <div className="carousel-item">
                             <img src={imagem_8} className="d-block w-100" alt="Registro 8" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={imagem_12} className="d-block w-100" alt="Registro 12" />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

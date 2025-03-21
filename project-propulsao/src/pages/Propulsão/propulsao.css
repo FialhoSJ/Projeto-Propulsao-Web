@@ -2,23 +2,34 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: justify;
+    margin-top: 20px;
+    max-width: 1000px;
   }
 
 .video-grid-large{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
+    max-width: 2000px;
+    margin: auto;
+    width: 100%;  
 }
 
-.video-enrtevista{
-    display: grid;
-    justify-items: center;
-}
-  
+
   video {
     width: 100%; /* Faz com que o vídeo ocupe 100% do seu contêiner */
-    max-width: 800px; /* Limita a largura máxima */
+    max-width: 780px; /* Limita a largura máxima */
     height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    object-fit: cover; /* Garante que o vídeo seja cortado de forma proporcional, se necessário */
+    display: block;
+    margin: auto;
   }
 
   figcaption{
@@ -37,3 +48,64 @@
     color: #1d1d1d;
     font-style: italic;
   }
+
+  .carousel-inner img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    max-width: 500px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção original da imagem */
+    margin: auto; /* Centraliza a imagem dentro do carrossel */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    object-fit: contain; /* Garante que a imagem seja ajustada dentro do contêiner sem ser cortada */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Muda a cor das setas para preto */
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente para melhor visibilidade */
+    border-radius: 50%; /* Torna o fundo arredondado */
+    padding: 5px; /* Adiciona espaço ao redor das setas */
+    margin-top: -20px; /* Ajusta a posição vertical dos botões */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #3498db;
+}
+
+p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

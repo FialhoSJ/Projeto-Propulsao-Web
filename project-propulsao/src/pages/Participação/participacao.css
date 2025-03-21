@@ -1,11 +1,71 @@
 .carousel-inner img {
-    max-width: 90%; /* Reduzindo a largura da imagem sem cortá-la */
-    height: 490px; /* Mantém a proporção original da imagem */
-    margin: auto; /* Centraliza a imagem dentro do carrossel */
-    border-radius: 20px;
+  width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+  max-width: 600px; /* Limita a largura máxima da imagem */
+  max-height: 690px; /* Limita a altura máxima da imagem */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin: auto; /* Centraliza a imagem dentro do carrossel */
+  border-radius: 20px; /* Mantém o design arredondado */
+  object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional, se necessário */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(100%); /* Muda a cor das setas para preto */
+  filter: invert(100%); /* Muda a cor das setas para preto */
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente para melhor visibilidade */
+  border-radius: 50%; /* Torna o fundo arredondado */
+  padding: 10px; /* Adiciona espaço ao redor das setas */
 }
+
+/* Regras de mídia para responsividade */
+@media (max-width: 768px) {
+  .carousel-inner img {
+      max-width: 100%; /* Garante que a imagem ocupe toda a largura em telas menores */
+      height: auto; /* Mantém a proporção original */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      padding: 8px; /* Reduz o tamanho do botão em telas menores */
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  .page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: justify;
+  }
+
+  
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
